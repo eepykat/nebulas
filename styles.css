@@ -1,7 +1,23 @@
 /* Copy pasted directly from inside the <styles> */
-body {
+
+/*
+These Rules Apply to EVERYTHING
+this will let us not have to apply
+as much styling to every little part
+*/
+html, body {
+    background-color: rgb(19, 7, 30);
+	margin: 0;
+    padding: 0;
     width: 100%;
+    font-size: 1em;
 }
+
+/* 
+
+meow
+
+*/
 .title {
     text-align: center;
     font-family: "Limelight", serif;
