@@ -1,0 +1,107 @@
+
+body {
+    width: 100%;
+}
+.title {
+    text-align: center;
+    font-family: "Limelight", serif;
+    font-size: 85px;
+    background: linear-gradient(to bottom, #cccccc 22%, #d6c5c5 24%, #b8b8b8 26%, #b8b8b8 27%, #d9d9d9 40%, #201f1f 78%);
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: -370px;
+    animation-name: Shadow;
+    animation-duration: 0.8s;
+    animation-delay: 1.7s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.belowtitle1 {
+    text-align: center;
+    font-family: "Hammersmith One", serif;
+    font-size: 35px;
+    background: linear-gradient(to right, rgb(255, 255, 255),rgb(53, 53, 59),rgb(253, 253, 253));
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: -425px;
+}
+.belowtitle2 {
+    text-align: center;
+    font-family: "Audiowide", serif;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(0, 251, 255), rgb(255, 100, 237), rgb(255, 255, 255), rgb(0, 251, 255), rgb(255, 100, 237));
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: -450px;
+    animation-name: Shadow2;
+    animation-duration: 0.3s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.animation1 {
+    animation-name: AppearFromTop;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.animation2 {
+    animation-name: FadeIn;
+    opacity: 0;
+    animation-duration: 1.25s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+.animation3 {
+    animation-name: FadeIn2;
+    opacity: 0;
+    animation-duration: 1.1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes Shadow2 {
+    0% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 2px 2px 5px rgb(241, 165, 184);
+    }
+}
+@keyframes Shadow {
+    0% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 6px 6px 10px rgb(43, 41, 41);
+    }
+}
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes FadeIn2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes AppearFromTop {
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(200%);
+    }
+}
