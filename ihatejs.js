@@ -1,4 +1,4 @@
-const elementsToAnimate = document.querySelectorAll('container1');
+const elementsToAnimate = document.querySelectorAll('#about-us-box');
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -19,3 +19,4 @@ elementsToAnimate.forEach(element => {
 
 
 console.log("meow hi im here");
+console.log("cooperation, please... :c");
