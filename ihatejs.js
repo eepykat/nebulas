@@ -2,7 +2,7 @@ const elementsToAnimate = document.querySelectorAll('#about-us-box');
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    treshold: 0.25
+    treshold: 0.15
 };
 const observerCallback = (entries, observer) => {
     entries.forEach(entry => {
