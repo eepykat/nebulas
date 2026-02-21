@@ -1,29 +1,111 @@
-/* Copy pasted directly from inside the <styles> */
-
 /*
 These Rules Apply to EVERYTHING
 this will let us not have to apply
 as much styling to every little part
 */
-html, body {
-    background-color: rgb(19, 7, 30);
+* {
 	margin: 0;
     padding: 0;
+}
+
+html, body {
+    background-color: rgb(19, 7, 30);
     width: 100%;
     font-size: 1em;
 }
-
 /* 
-
-meow
-
+TOP PART
 */
-
-.welcome-top {
-    width: 960px;
+#welcome-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 960px;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
 }
+
+#welcome-top h1 {
+    text-align: center;
+    font-family: "Limelight", serif;
+    font-size: 85px;
+    background: linear-gradient(to bottom, #cccccc 22%, #d6c5c5 24%, #b8b8b8 26%, #b8b8b8 27%, #d9d9d9 40%, #201f1f 78%);
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform: translateY(-100vh);
+    animation: h1-welcome-drop 0.8s 0.2s ease-out forwards, 
+                    h1-shadow-fade 1.3s 0.5s ease-in forwards;
+}
+@keyframes h1-welcome-drop {
+    from { opacity: 0; transform: translateY(-100vh); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes h1-shadow-fade {
+    from { text-shadow: 0 0 0 transparent; }
+    to { text-shadow: 6px 6px 10px rgb(43, 41, 41); }
+}
+
+#welcome-top .below-1 {
+    text-align: center;
+    font-family: "Hammersmith One", serif;
+    font-size: 35px;
+    background: linear-gradient(to right, rgb(255, 255, 255),rgb(53, 53, 59),rgb(253, 253, 253));
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: fade-in-1 0.5s 1s ease-out forwards;
+}
+@keyframes fade-in-1 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+#welcome-top .below-2 {
+    text-align: center;
+    font-family: "Audiowide", serif;
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(0, 251, 255), rgb(255, 100, 237), rgb(255, 255, 255), rgb(0, 251, 255), rgb(255, 100, 237));
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation: fade-in-2 1s 2s  ease-out forwards, below-2-shadow 0.3s 2.5s  ease-out forwards;
+}
+@keyframes fade-in-2 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes below-2-shadow {
+    from { text-shadow: none; }
+    to { text-shadow: 2px 2px 5px rgb(241, 165, 184); }
+}
+/* 
+ABOUT US BOX
+*/
+
+#about-us-box {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#about-us-box h2 {
+    text-align: center;
+    font-family: "Audiowide", serif;
+    font-size: 45px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(99, 99, 106),rgb(0, 0, 0));
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: -50px;
+}
+
+/*
+
+OLD RULES
 
 .title {
     text-align: center;
@@ -65,16 +147,6 @@ meow
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-.desctitle {
-    text-align: center;
-    font-family: "Audiowide", serif;
-    font-size: 45px;
-    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(99, 99, 106),rgb(0, 0, 0));
-    background-clip: text;
-    color: transparent;
-    position: relative;
-    top: -50px;
-}
 .container1 {
     margin-top: 450px;
     margin-left: 80px;
@@ -83,7 +155,7 @@ meow
     border-image: linear-gradient(to right, rgb(214, 209, 209), rgb(39, 37, 37), rgb(214, 209, 209));
     border-image-slice: 1;
     width: 500px;
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-100%);
     transition: transform 0.8s ease-out, opacity 0.6s ease-out;
 }
@@ -120,37 +192,4 @@ meow
         text-shadow: 2px 2px 5px rgb(241, 165, 184);
     }
 }
-@keyframes Shadow {
-    0% {
-        text-shadow: none;
-    }
-    100% {
-        text-shadow: 6px 6px 10px rgb(43, 41, 41);
-    }
-}
-@keyframes FadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes FadeIn2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-@keyframes AppearFromTop {
-    0% {
-        transform: translateY(-200%);
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(200%);
-    }
-}
+*/
