@@ -89,7 +89,15 @@ ABOUT US BOX
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    padding-bottom: 50px;
 
+
+}
+
+#about-us-box section {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #about-us-box h2 {
@@ -99,10 +107,15 @@ ABOUT US BOX
     background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(99, 99, 106),rgb(0, 0, 0));
     background-clip: text;
     color: transparent;
-    position: relative;
-    top: -50px;
 }
-
+#about-us-box p {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(99, 99, 106),rgb(0, 0, 0));
+    background-clip: text;
+    color: transparent;
+}
 /*
 
 OLD RULES
