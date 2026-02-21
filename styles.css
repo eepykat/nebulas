@@ -95,7 +95,7 @@ ABOUT US BOX
     border-image: linear-gradient(to right, rgb(255, 255, 255),rgb(16, 16, 17),rgb(235, 227, 227));
     border-image-slice: 1;
     opacity: 0;
-    transform: translateX(-500px);
+    transform: translateX(-600px);
     transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
