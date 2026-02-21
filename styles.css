@@ -18,6 +18,14 @@ html, body {
 meow
 
 */
+
+
+.welcome-top {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .title {
     text-align: center;
     font-family: "Limelight", serif;
