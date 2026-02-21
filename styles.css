@@ -91,8 +91,6 @@ ABOUT US BOX
     margin-right: auto;
     display: flex;
     padding-bottom: 50px;
-
-
 }
 
 #about-us-box section {
@@ -116,10 +114,12 @@ ABOUT US BOX
     background-clip: text;
     color: transparent;
 }
+
+
+
+
 /*
-
-OLD RULES
-
+OLD RULES - TO BE REMOVED
 .title {
     text-align: center;
     font-family: "Limelight", serif;
