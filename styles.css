@@ -1,8 +1,3 @@
-/*
-These Rules Apply to EVERYTHING
-this will let us not have to apply
-as much styling to every little part
-*/
 * {
 	margin: 0;
     padding: 0;
@@ -122,7 +117,7 @@ ABOUT US BOX
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
-    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(99, 99, 106),rgb(0, 0, 0));
+    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(81, 78, 78),rgb(255, 235, 235));
     background-clip: text;
     color: transparent;
 }
