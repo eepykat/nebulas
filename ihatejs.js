@@ -1,4 +1,4 @@
-const elementsToAnimate = document.querySelectorAll('#about-us, #offer1');
+const elementsToAnimate = document.querySelectorAll('#about-us');
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -16,6 +16,8 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 elementsToAnimate.forEach(element => {
     observer.observe(element);
 });
+
+
 
 console.log("meow hi im here");
 console.log("cooperation, please... :c");
