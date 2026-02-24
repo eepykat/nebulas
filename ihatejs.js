@@ -1,4 +1,4 @@
-const elementsToAnimate = document.querySelectorAll('#about-us');
+const elementsToAnimate = document.querySelectorAll('#about-us, #offer1');
 const observerOptions = {
     root: null,
     rootMargin: '0px',

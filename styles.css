@@ -169,3 +169,42 @@ ABOUT US BOX
     color: #fff;
     background-clip: text;
 }
+
+/*
+WHAT CAN WE OFFER BOXES
+*/
+
+#offer1 {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    margin-left: 0px;
+
+    border: 10px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(255, 244, 244), rgb(174, 166, 166), rgb(69, 66, 66));
+    border-image-slice: 1;
+    opacity: 1;
+
+    tzransform: translateX(-600px);
+    trzansition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.offer1-desc-box {
+
+}
+
+
+
+#offer2 {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer2-desc-box {
+
+}
