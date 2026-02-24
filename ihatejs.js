@@ -17,6 +17,7 @@ elementsToAnimate.forEach(element => {
     observer.observe(element);
 });
 
-
 console.log("meow hi im here");
 console.log("cooperation, please... :c");
+// I love JavaScript! :3
+console.log("Here is a 'Random' Number :3 " + Math.floor(Math.random() *  Math.floor(Math.random() + 1 * 999.97 )));
