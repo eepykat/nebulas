@@ -189,7 +189,7 @@ WHAT CAN WE OFFER BOXES
 
     opacity: 0;
     transition: transform 2s ease-out, opacity 1.5s ease-in-out;
-    transform: translateX(-1000px);
+    transform: translateX(1000px);
 }
 #offer1.show {
     opacity: 1;
