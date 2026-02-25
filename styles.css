@@ -189,7 +189,7 @@ WHAT CAN WE OFFER BOXES
 
     opacity: 0;
     transition: transform 2s ease-out, opacity 1.5s ease-in-out;
-        transform: translateX(-1000px);
+    transform: translateX(-1000px);
 }
 #offer1.show {
     opacity: 1;
@@ -198,6 +198,7 @@ WHAT CAN WE OFFER BOXES
 .offer1-desc-box, .offer2-desc-box {
     flex: 1;
     padding: 50px;
+    padding-top: 5px;
     
 
     border: 10px solid transparent;
@@ -221,6 +222,8 @@ WHAT CAN WE OFFER BOXES
     background-clip: text;
     color: transparent;
     padding: 15px;
+    text-shadow: 1px 1px 15px rgb(191, 47, 248);
+    margin-bottom: 30px;
 }
 .offer1-desc-box p, .offer2-desc-box p {
     text-align: left;
@@ -232,5 +235,23 @@ WHAT CAN WE OFFER BOXES
     font-size: 1.4em;
     color: #fff;
     background-clip: text;
-    padding: 8px;
+    padding: 7px;
+    padding-bottom: 55px;
+}
+.feline-cloud-button {
+    background-image: linear-gradient(to bottom, rgb(162, 1, 243), rgb(255, 255, 255), rgb(170, 0, 255));
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+    text-shadow: 2px 2px 4px rgb(234, 47, 248);
+    font-size: 25px;
+    font-family: "Hammersmith One", serif;
+    border: 5px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.6s ease, transform 0.6s ease;
+}
+.feline-cloud-button:hover {
+    box-shadow: 10px 10px 15px rgba(156, 8, 255, 0.722);
+    transform: translateY(-5px);
 }
