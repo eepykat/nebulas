@@ -32,8 +32,6 @@ const observer2 = new IntersectionObserver((entries) => {
 document.querySelectorAll('#offer1 .offer2-desc-box').forEach(box => observer2.observe(box));
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
 const observer2 = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -45,7 +43,6 @@ const observer2 = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px' });
 document.querySelectorAll('#offer1 .offer1-desc-box').forEach(box => observer2.observe(box));
 });
-
 
 
 console.log("meow hi im here");
