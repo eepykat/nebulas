@@ -119,6 +119,35 @@ TOP PART
         transform: rotate(45deg) translate(20px, 20px);
     }
 }
+.contact-us-button {
+    background-image: linear-gradient(to bottom, rgb(58, 0, 84), rgb(179, 39, 255), rgb(58, 0, 84));
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+       text-shadow: 3px 3px 1px #f700ff,
+        -1px -1px 2px #eee,
+        6px 6px 1px #09ff00;
+    font-family: "Hammersmith One", serif;
+    font-size: 45px;
+    opacity: 0;
+    animation: fade-in-3 0.6s 3s ease-in forwards;
+        transition: text-shadow 0.6s ease, box-shadow 0.6s ease, transform 0.6s ease;
+}
+@keyframes fade-in-3 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+.contact-us-button:hover {
+        text-shadow: -3px -3px 1px #f700ff,
+        1px 1px 2px #eee,
+        -6px -6px 1px #09ff00;
+    box-shadow: 5px 5px 15px #f700ff;
+    transform: translateY(-5px);
+}
 
 /* 
 ABOUT US BOX
