@@ -145,7 +145,7 @@ TOP PART
     content: "";
     background-image: linear-gradient(to bottom, rgb(58, 0, 84), rgb(179, 39, 255), rgb(58, 0, 84));
     z-index: -1;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     left: 0;
@@ -154,7 +154,7 @@ TOP PART
 }
 .contact-us-button::before {
     content: "";
-    background: linear-gradient(45deg, #6600ff, #8f50ee, #c800ff, #ff00ff, #c800ff, #8f50ee, #6600ff);
+    background: linear-gradient(45deg, #641ecd, #8f50ee, #c800ff, #ff00ff, #c800ff, #8f50ee, #641ecd);
     position: absolute;
     top: -2px;
     left: -2px;
@@ -164,7 +164,6 @@ TOP PART
     height: calc(100% + 4px);
     filter: blur(8px);
     transition: opacity 0.3s ease-in-out;
-    animation: gloweffect 20s linear infinite;
     border-radius: 10px;
     opacity: 1;
 }
@@ -203,8 +202,9 @@ TOP PART
 }
 .contact-us-button:hover::before {
     opacity: 1;
+    animation: gloweffect 20s linear infinite;
 }
-.contact-us-button:active:after {
+.contact-us-button:hover:after {
     background: transparent;
 }
 
