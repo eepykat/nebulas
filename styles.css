@@ -154,7 +154,7 @@ TOP PART
 }
 .contact-us-button::before {
     content: "";
-    background: linear-gradient(45deg, #6600ff, #8f50ee, #c800ff, #ff00ff, #c800ff, #8f50ee #6600ff);
+    background: linear-gradient(45deg, #6600ff, #8f50ee, #c800ff, #ff00ff, #c800ff, #8f50ee, #6600ff);
     position: absolute;
     top: -2px;
     left: -2px;
