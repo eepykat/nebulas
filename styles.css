@@ -120,7 +120,7 @@ TOP PART
     }
 }
 .contact-us-button {
-    background-image: linear-gradient(to bottom, rgb(58, 0, 84), rgb(179, 39, 255), rgb(58, 0, 84));
+
     padding: 20px;
     margin-top: 30px;
     display: block;
@@ -128,9 +128,56 @@ TOP PART
     font-size: 45px;
     opacity: 0;
     border: 3px solid transparent;
-    border-radius: 15px;
+    border-radius: 25px;
+    border-color: #c800ff;
+
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    cursor: pointer;
+
+
     animation: fade-in-3 0.6s 3s ease-in forwards, shadowappear 5s 3s ease-in-out infinite;
         transition: text-shadow 0.6s ease, box-shadow 0.6s ease, transform 0.6s ease;
+}
+.contact-us-button::after {
+    content: "";
+    background-image: linear-gradient(to bottom, rgb(58, 0, 84), rgb(179, 39, 255), rgb(58, 0, 84));
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+}
+.contact-us-button::before {
+    content: "";
+    background: linear-gradient(45deg, #6600ff, #8f50ee, #c800ff, #ff00ff, #c800ff, #8f50ee #6600ff);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    transition: opacity 0.3s ease-in-out;
+    animation: gloweffect 20s linear infinite;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes gloweffect {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 @keyframes fade-in-3 {
     from {
@@ -151,11 +198,14 @@ TOP PART
     }
 }
 .contact-us-button:hover {
-        text-shadow: -3px -3px 1px #f700ff,
-        1px 1px 2px #eee,
-        -6px -6px 1px #09ff00;
     box-shadow: 3px 3px 15px #f700ff;
     transform: translateY(-5px);
+}
+.contact-us-button:hover::before {
+    opacity: 1;
+}
+.contact-us-button:active:after {
+    background: transparent;
 }
 
 /* 
