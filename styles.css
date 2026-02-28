@@ -9,9 +9,61 @@ html, body {
     font-size: 1em;
     overflow-x: hidden;
 }
+/*
+NAVIGATION BAR
+*/
+.navbar {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    padding-left: 475px;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    
+    opacity: 0;
+    animation: fade-in-4 0.5s 1s ease-out forwards;
+}
+@keyframes fade-in-4 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+.navbarlinks {
+    align-items: center;
+    display: flex;
+}
+.navbar .navbarlinks ul {
+    list-style-type: none;
+    background: rgb(39, 14, 62);
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    overflow: hidden;
+}
+.navbar .navbarlinks ul li {
+    padding: 0 25px;
+}
+.navbar .navbarlinks a {
+    font-family: "Hammersmith one", serif;
+    padding: 15px;
+    display: block;
+    background-image: linear-gradient(to right, rgb(119, 33, 200), rgb(255, 0, 238));
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    transition: transform 0.7s ease;
+}
+.navbar .navbarlinks a:hover{
+    transform: scale(1.1);
+}
 /* 
 TOP PART
 */
+
 #welcome-top {
     display: flex;
     flex-direction: column;
